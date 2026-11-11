@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website Mini Project RWD Hoàn chỉnh - Lab 5">
+    <title>Trang Chủ | RWD Mini Project</title>
+    <!-- Open Graph SEO -->
+    <meta property="og:title" content="RWD Mini Project Lab 5">
+    <meta property="og:description" content="Website đáp ứng chuẩn HTML, CSS Flexbox/Grid, JS DOM.">
+    <meta property="og:image" content="assets/img/optimized/hero.webp">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Navbar (Bài 1 + Bài 2) -->
+    <header class="navbar">
+        <!-- Đã thêm thẻ img logo vào đây -->
+        <div class="logo-container" style="display: flex; align-items: center; gap: 10px;">
+            <img src="assets/img/optimized/logo.webp" alt="Logo" style="height: 40px; width: auto;">
+            <div class="logo">WebDev Lab5</div>
+        </div>
+
+        <nav class="nav-menu" id="navMenu">
+            <a href="index.html" class="active">Trang chủ</a>
+            <a href="pages/about.html">Giới thiệu</a>
+            <a href="pages/contact.html">Liên hệ</a>
+        </nav>
+        <div class="nav-actions">
+            <button id="darkModeToggle" class="btn-theme">🌙 Dark Mode</button>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section (Bài 1) -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Chào mừng đến với RWD Mini Project</h1>
+            <p>Hệ thống sản phẩm công nghệ & lối sống hiện đại.</p>
+        </div>
+    </section>
+
+    <!-- Sản Phẩm & Lọc (Bài 3) -->
+    <main class="container">
+        <h2>Danh Sách Sản Phẩm</h2>
+        <div class="filter-controls">
+            <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm...">
+            <select id="categoryFilter">
+                <option value="all">Tất cả danh mục</option>
+                <option value="tech">Công nghệ</option>
+                <option value="fashion">Thời trang</option>
+                <option value="lifestyle">Lối sống</option>
+            </select>
+        </div>
+
+        <div class="product-grid" id="productContainer">
+            <!-- Render từ JS -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 RWD Lab 5 Mini Project. All rights reserved.</p>
+    </footer>
+
+    <!-- Back to Top (Bài 2) -->
+    <button id="backToTop" class="back-to-top">⬆ Top</button>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

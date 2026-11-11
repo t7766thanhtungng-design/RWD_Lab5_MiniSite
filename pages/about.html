@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trang Giới Thiệu - RWD Mini Project">
+    <title>Giới Thiệu | RWD Mini Project</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <!-- Navbar Navigation -->
+    <header class="navbar">
+        <div class="logo">WebDev Lab5</div>
+        <nav class="nav-menu" id="navMenu">
+            <a href="../index.html">Trang chủ</a>
+            <a href="about.html" class="active">Giới thiệu</a>
+            <a href="contact.html">Liên hệ</a>
+        </nav>
+        <div class="nav-actions">
+            <button id="darkModeToggle" class="btn-theme">🌙 Dark Mode</button>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container about-container">
+        <!-- Hero About Section: Text bên trái + Image Banner bên phải -->
+        <section class="about-hero">
+            <div class="about-text">
+                <h1>Về Chúng Tôi</h1>
+                <p class="subtitle">Đây là bài Lab 5 thuộc môn Thiết kế Web đáp ứng (Responsive Web Design).</p>
+                <p>Website được xây dựng nhằm tối ưu hóa trải nghiệm người dùng trên mọi thiết bị (Desktop, Tablet, Mobile) với kiến trúc mã nguồn sạch, tích hợp Flexbox, Grid và JavaScript DOM tương tác.</p>
+            </div>
+            <div class="about-banner">
+                <!-- Bạn có thể thay đường dẫn ảnh bên dưới thành ảnh background vừa tạo -->
+                <img src="../assets/img/optimized/about-bg.webp" alt="Hình ảnh giới thiệu đội ngũ">
+            </div>
+        </section>
+
+        <!-- Section: Sứ mệnh & Tầm nhìn -->
+        <section class="about-features">
+            <div class="feature-card">
+                <div class="icon">🚀</div>
+                <h3>Sứ Mệnh</h3>
+                <p>Cung cấp giải pháp giao diện Web hiện đại, mượt mà và tối ưu hiệu năng đạt chuẩn kiểm thử Lighthouse.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">👁️</div>
+                <h3>Tầm Nhìn</h3>
+                <p>Trở thành nền tảng mẫu chuẩn mực trong thực hành lập trình Web Frontend đáp ứng đa thiết bị.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">💡</div>
+                <h3>Giá Trị Cốt Lõi</h3>
+                <p>Sáng tạo - Tối ưu - Trải nghiệm người dùng hàng đầu - Tương thích chuẩn RWD.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 RWD Lab 5 Mini Project. All rights reserved.</p>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">⬆ Top</button>
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>

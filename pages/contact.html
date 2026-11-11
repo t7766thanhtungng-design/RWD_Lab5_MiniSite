@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ | RWD Mini Project</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">WebDev Lab5</div>
+        <nav class="nav-menu" id="navMenu">
+            <a href="../index.html">Trang chủ</a>
+            <a href="about.html">Giới thiệu</a>
+            <a href="contact.html" class="active">Liên hệ</a>
+        </nav>
+        <div class="nav-actions">
+            <button id="darkModeToggle" class="btn-theme">🌙 Dark Mode</button>
+            <div class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Gửi Thông Tin Liên Hệ</h2>
+        <form id="contactForm" class="contact-form">
+            <div id="errorMsg" class="message-box"></div>
+            
+            <div class="form-group">
+                <label for="name">Họ và tên:</label>
+                <input type="text" id="name" placeholder="Nhập họ tên...">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="example@gmail.com">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Nội dung (tối thiểu 20 ký tự):</label>
+                <textarea id="message" rows="5" placeholder="Nhập nội dung liên hệ..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Gửi tin nhắn</button>
+        </form>
+    </main>
+
+    <button id="backToTop" class="back-to-top">⬆ Top</button>
+    <script src="../assets/js/app.js"></script>
+</body>
+</html>
